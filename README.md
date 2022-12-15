@@ -122,17 +122,17 @@
 
 <h4>Show the logs of container</h4>
 <code>docker logs CONTAINER_NAME </code> <br>
-<code>docker logs postgres<code>
+<code>docker logs postgres</code>
 
 <h4>Show a stats of running container</h4>
-<code>docker stats [container_Id]<code>
+<code>docker stats [container_Id]</code>
 
 <h4>Show processes of container</h4>
 <code>docker top CONTAINER_NAME </code> <br>
-<code>docker top postgres<code>
+<code>docker top postgres</code>
 
 <h4>Show detailed information</h4>
 <code>docker inspect CONTAINER_NAME </code> <br>
-<code>docker inspect postgres <code>
+<code>docker inspect postgres </code>
 <hr>
 
