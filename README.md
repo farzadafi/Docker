@@ -136,3 +136,23 @@
 <code>docker inspect postgres </code>
 <hr>
 
+<h2>Network</h2>
+
+<h4>List all networks</h4>
+<code>docker network ls </code>
+
+<h4>Inspect a network</h4>
+<code>docker network inspect NETWORK_NAME </code> <br>
+<code>docker network inspect br0</code>
+
+<h4>Connect a container to a network</h4>
+<code>docker network connect NETWORK_NAME CONTAINER_NAME</code> <br>
+<code>docker network connect br0 postgres</code>
+
+<h4>Disconnect a container from a network</h4>
+<code>docker network disconnect NETWORK_NAME CONTAINER_NAME</code> <br>
+<code>docker network disconnect br0 postgres</code>
+
+<h4>List networks</h4>
+<code>docker tag IMAGE_NAME NEW_IMAGE_NAME</code> <br>
+<code>docker tag postgres:1.0 postgres:1.1</code>
