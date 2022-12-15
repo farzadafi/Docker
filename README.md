@@ -3,77 +3,77 @@
 <h2>Containers</h2>
 
 <h4>_Start a new Container from an Image_</h4>
-    `docker run IMAGE` <br>
-    `docker run postgres`
+<code>docker run IMAGE</code> <br>
+<code>docker run postgres</code>
 
 <h4>Assign a name to container</h4>
-`docker run --name CONTAINER_NAME IMAGE` <br>
-`docker run --name web postgres`
+<code>docker run --name CONTAINER_NAME IMAGE</code> <br>
+<code>docker run --name web postgres</code>
 
 
 <h4>_Map a port to container_</h4>
-`docker run -p HOSTPORT:CONTAINERPORT IMAGE` <br>
-`docker run -p 8680:80 postgres`
+<code>docker run -p HOSTPORT:CONTAINERPORT IMAGE</code> <br>
+<code>docker run -p 8680:80 postgres</code>
 
 
 <h4>Map all ports to container</h4>
-`docker run -P IMAGE` <br>
-`docker run -P postgres`
+<code>docker run -P IMAGE</code> <br>
+<code>docker run -P postgres</code>
 
 <h4>Start container in background</h4>
-`docker run -d IMAGE` <br>
-`docker run -d postgres`
+<code>docker run -d IMAGE</code> <br>
+<code>docker run -d postgres</code>
 
 <h4>Assign a hostname to container</h4>
-`docker run --hostname HOSTNAME IMAGE` <br>
-`docker run --hostname myhost postgres`
+<code>docker run --hostname HOSTNAME IMAGE</code> <br>
+<code>docker run --hostname myhost postgres</code>
 
 <h4>Show a list of running container</h4>
-`docker ps`
+<code>docker ps</code>
 
 <h4>Show a list of all containers</h4>
-`docker ps -a`
+<code>docker ps -a</code>
 
 <h4>Delete a container</h4>
-`docker rm CONTAINER_NAME` <br>
-`docker rm web`
+<code>docker rm CONTAINER_NAME</code> <br>
+<code>docker rm web</code>
 
 <h4>Delete a running container</h4>
-`docker rm -f CONTAINER_NAME` <br>
-`docker rm -f postgres`
+<code>docker rm -f CONTAINER_NAME</code> <br>
+<code>docker rm -f postgres</code>
 
 <h4>Delete stopped container</h4>
-`docker container prune`
+<code>docker container prune</code>
 
 <h4>Stop a running container</h4>
-`docker stop CONTAINER_NAME` <br>
-`docker stop postgres`
+<code>docker stop CONTAINER_NAME</code> <br>
+<code>docker stop postgres</code>
 
 <h4>Start a stopped container</h4>
-`docker start CONTAINER_NAME` <br>
-`docker start postgres`
+<code>docker start CONTAINER_NAME</code> <br>
+<code>docker start postgres</code>
 
 <h4>Copy file from container to host</h4>
-`docker cp CONTAINER_NAME:SOURCE TARGET` <br>
-`docker cp postgres:/index.html index.html`
+<code>docker cp CONTAINER_NAME:SOURCE TARGET</code> <br>
+<code>docker cp postgres:/index.html index.html</code>
 
 <h4>Copy file from the host to container</h4>
-`docker cp TARGET CONTAINER_NAME:HOST` <br>
-`docker cp index.html postgres:/index.html`
+<code>docker cp TARGET CONTAINER_NAME:HOST</code> <br>
+<code>docker cp index.html postgres:/index.html</code>
 
 <h4>Renaming a Container</h4>
-`docker stop old_name new_name` <br>
-`docker rename postgres postgresNew`
+<code>docker stop old_name new_name</code> <br>
+<code>docker rename postgres postgresNew</code>
 
 <h4>Restarting a container</h4>
-`docker stop CONTAINER_NAME` <br>
-`docker restart postgres`
+<code>docker stop CONTAINER_NAME</code> <br>
+<code>docker restart postgres</code>
 
 <h4>Pausing a container</h4>
-`docker pause CONTAINER_NAME`
-`docker pause postgres`
+`docker pause CONTAINER_NAME</code>
+<code>docker pause postgres</code>
 
 <h4>Start a shell inside a running container</h4>
-`docker exec -it CONTAINER_NAME SHELL_NAME` <br>
-`docker exec -it postgres bash`
+<code>docker exec -it CONTAINER_NAME SHELL_NAME</code> <br>
+<code>docker exec -it postgres bash</code>
 
