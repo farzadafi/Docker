@@ -116,5 +116,23 @@
 <h4>Load an image from .tar file</h4>
 <code>docker load -i TAR_FILE_NAME </code> <br>
 <code>docker load -i postgres.tar</code>
+<hr>
 
+<h2>Logs and Stats</h2>
+
+<h4>Show the logs of container</h4>
+<code>docker logs CONTAINER_NAME </code> <br>
+<code>docker logs postgres<code>
+
+<h4>Show a stats of running container</h4>
+<code>docker stats [container_Id]<code>
+
+<h4>Show processes of container</h4>
+<code>docker top CONTAINER_NAME </code> <br>
+<code>docker top postgres<code>
+
+<h4>Show detailed information</h4>
+<code>docker inspect CONTAINER_NAME </code> <br>
+<code>docker inspect postgres <code>
+<hr>
 
